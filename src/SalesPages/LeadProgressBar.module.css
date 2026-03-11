@@ -1,0 +1,194 @@
+.container {
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #1e40af;
+  margin: 0 0 12px;
+}
+
+.currentStage,
+.lastActivity {
+  font-size: 1.1rem;
+  color: #374151;
+  margin: 6px 0;
+}
+
+.progressSection {
+  margin-bottom: 40px;
+}
+
+.progressBarWrapper {
+  background: #f3f4f6;
+  border-radius: 999px;
+  height: 28px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: #e5e7eb;
+  position: relative;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transition: width 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.progressText {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.progressLabel {
+  text-align: center;
+  margin-top: 12px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.sectionTitle {
+  font-size: 1.35rem;
+  color: #1e40af;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.stepItem.completed {
+  background: #ecfdf5;
+}
+
+.stepCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d1d5db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.stepItem.completed .stepCircle {
+  background: #10b981;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepLabel {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.stepDate {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 14px;
+  width: 4px;
+  background: #e5e7eb;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3b82f6;
+  border: 4px solid #bfdbfe;
+}
+
+.timelineContent {
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.timelineAction {
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.timelineRemark {
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.timelineMeta {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.loading,
+.error,
+.noData {
+  text-align: center;
+  padding: 40px 0;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.error {
+  color: #dc2626;
+}
